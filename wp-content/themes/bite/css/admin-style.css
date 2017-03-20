@@ -1,0 +1,58 @@
+/*
+Description: Custom admin styles
+*/
+
+#wpbody-content #dashboard-widgets .postbox-container {
+    display: none !important;
+}
+
+#wpbody-content #dashboard-widgets #postbox-container-1 {
+    width: 100%;
+    display: block !important;
+}
+
+#bitetheme_dashboard_welcome {
+    background-color: #0092c8;
+    color: #fff;
+    text-align: center;
+}
+
+#bitetheme_dashboard_welcome h2 {
+    font-size: 24px;
+}
+
+#bitetheme_dashboard_welcome.postbox .hndle {
+    border-bottom: none;
+    color: #fff;
+    font-weight: 200;
+}
+
+
+#bitetheme_dashboard_welcome .dashboard-welcome-logo {
+    width: 100%;
+    padding-bottom: 60vh;
+    background-image: url('../img/logo-neg-dark.svg');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+.wp-admin #wpadminbar #wp-admin-bar-site-name > .ab-item::before {
+    content: "";
+    height: 20px;
+    width: 25px;
+}
+
+.wp-admin #wpadminbar #wp-admin-bar-site-name > .ab-item {
+    background-image: url("../img/logo-admin-bar.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head, #adminmenu .wp-menu-arrow, #adminmenu .wp-menu-arrow div, #adminmenu li.current a.menu-top, #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, .folded #adminmenu li.current.menu-top, .folded #adminmenu li.wp-has-current-submenu {
+    background: #0092c8;
+}

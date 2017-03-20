@@ -1,0 +1,208 @@
+/*
+Description: Custom login styles
+*/
+
+@font-face {
+    font-family: 'Neo Sans';
+    src:
+        url('../fonts/NeoSansStd-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NeoSansStd-Regular.otf')  format('opentype'),
+        url('../fonts/NeoSansStd-Regular.woff') format('woff'),
+        url('../fonts/NeoSansStd-Regular.ttf')  format('truetype'),
+        url('../fonts/NeoSansStd-Regular.svg#NeoSansStd-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neo Sans';
+    src:
+        url('../fonts/NeoSansStd-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NeoSansStd-Light.otf')  format('opentype'),
+        url('../fonts/NeoSansStd-Light.woff') format('woff'),
+        url('../fonts/NeoSansStd-Light.ttf')  format('truetype'),
+        url('../fonts/NeoSansStd-Light.svg#NeoSansStd-Light') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    height: 100%;
+}
+
+
+body {
+    background-image: url('../img/1920x1200_login-background.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: 'Neo Sans', sans-serif;
+    padding: 0 35px;
+}
+
+a {
+    outline: none;
+}
+
+a:focus {
+    outline: none;
+    box-shadow: none;
+    color: #fff;
+}
+
+.login #backtoblog a:focus, .login #nav a:focus, .login h1 a:focus {
+    color: #fff;
+}
+
+#login {
+    padding: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    max-width: 500px;
+}
+
+.login h1 a {
+    background-image: url('../img/logo-shark-neg-light.svg');
+    background-size: auto 100%;
+}
+
+.login form {
+    background: transparent;
+    box-shadow: none;
+    margin-top: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+#login form p {
+    text-align: center;
+}
+
+.login label {
+    color: #fff;
+    font-size: 22px;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 3px #000;
+}
+
+.login form .input,
+.login input[type="text"] {
+    margin: 15px 0 25px;
+    padding: 10px 10px;
+    border-radius: 2px;
+    font-size: 16px;
+    font-size: 1.6rem;
+    border: 1px solid #bcbcbc;
+    box-shadow: 0 0 2px #bcbcbc inset;
+    background: #fff;
+    text-align: center;
+}
+
+#login form p.submit {
+    display: inline-block;
+    width: 100%;
+}
+
+#login form p.submit #wp-submit {
+    display: block;
+    width: 100%;
+    float: none;
+    background: #000;
+    border: 1px solid #000;
+    box-shadow: 0 0 3px #000;
+    text-shadow: none;
+    font-size: 18px;
+    font-size: 1.8rem;
+    padding: 8px 5px;
+    height: auto;
+    text-transform: uppercase;
+    margin-top: 15px;
+
+    -webkit-transition: background-color 0.3s ease 0s;
+    -moz-transition: background-color 0.3s ease 0s;
+    -ms-transition: background-color 0.3s ease 0s;
+    transition: background-color 0.3s ease 0s;
+}
+
+#login form p.submit #wp-submit:hover {
+    background: #101010;
+}
+
+.login #backtoblog, .login #nav {
+    padding: 0;
+    text-align: center;
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+.login #backtoblog a,
+.login #nav a {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+}
+
+.login #backtoblog a:hover,
+.login #nav a:hover {
+    color: #fff;
+}
+
+.login #backtoblog a::after,
+.login #nav a::after {
+    background: #fff none repeat scroll 0 0;
+    bottom: -10px;
+    content: "";
+    height: 2px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.login #backtoblog a:hover::after,
+.login #nav a:hover::after {
+    bottom: -3px;
+    opacity: 1;
+}
+
+.login #backtoblog {
+    display: none;
+}
+
+.aiowps-captcha-equation {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
